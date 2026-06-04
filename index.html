@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>労働保険の年度更新と社会保険の定時決定｜顧問先向け説明資料</title>
+  <style>
+    :root{
+      --ink:#173247;
+      --muted:#5d7182;
+      --paper:#fffaf0;
+      --paper2:#f6fbff;
+      --line:#dbe5ee;
+      --blue:#1f6fa8;
+      --green:#1f8a70;
+      --gold:#d89a20;
+      --red:#b84d4d;
+      --navy:#0f2b46;
+      --white:#fff;
+      --shadow:0 18px 50px rgba(15,43,70,.13);
+      --radius:24px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;background:linear-gradient(135deg,#f8fbff 0%,#fff8ec 42%,#f4fbf7 100%);line-height:1.75;}
+    a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+    .page{max-width:1120px;margin:0 auto;padding:28px 22px 64px}
+    .brandbar{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:28px;padding:16px 18px;border:1px solid rgba(31,111,168,.16);background:rgba(255,255,255,.76);backdrop-filter:blur(12px);border-radius:20px;box-shadow:0 8px 28px rgba(15,43,70,.08)}
+    .brandbar img{width:270px;max-width:48%;height:auto;object-fit:contain}.brandnote{text-align:right;font-size:13px;color:var(--muted);line-height:1.5}.brandnote strong{display:block;color:var(--navy);font-size:15px}
+    .hero{position:relative;overflow:hidden;border-radius:34px;background:radial-gradient(circle at 82% 16%,rgba(216,154,32,.22),transparent 32%),linear-gradient(135deg,#0f2b46 0%,#17496c 58%,#1f8a70 100%);color:#fff;padding:46px;box-shadow:var(--shadow)}
+    .hero::after{content:"";position:absolute;inset:auto -90px -150px auto;width:420px;height:420px;background:rgba(255,255,255,.08);border-radius:50%}.kicker{letter-spacing:.14em;font-size:13px;font-weight:800;color:#bfe6ff}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.13;margin:12px 0 18px;letter-spacing:-.03em}.hero .lead{max-width:760px;font-size:18px;color:#edf7ff}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:26px;align-items:center;margin-top:30px}.hero-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.24);border-radius:26px;padding:22px;backdrop-filter:blur(10px)}.hero-card h2{font-size:20px;margin:0 0 12px}.hero-card ul{margin:0;padding-left:1.25em}.hero-img{margin:0}.hero-img img{width:100%;border-radius:24px;border:1px solid rgba(255,255,255,.32);box-shadow:0 18px 50px rgba(0,0,0,.24);display:block}.caption{font-size:12px;color:rgba(255,255,255,.78);margin-top:8px}
+    .quick{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:24px 0}.quick .item{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px 18px;box-shadow:0 8px 24px rgba(15,43,70,.06)}.quick b{display:block;font-size:22px;color:var(--navy);line-height:1.35}.quick span{font-size:13px;color:var(--muted)}
+    section{margin-top:34px;background:rgba(255,255,255,.88);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:0 12px 36px rgba(15,43,70,.07)}.section-head{display:flex;gap:16px;align-items:flex-start;margin-bottom:18px}.num{flex:none;width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,var(--blue),var(--green));color:#fff;display:grid;place-items:center;font-weight:900}.section-head h2{margin:0;font-size:clamp(24px,3vw,34px);letter-spacing:-.03em;line-height:1.26}.section-head p{margin:6px 0 0;color:var(--muted)}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}.figure{margin:8px 0 0}.figure img{width:100%;border-radius:22px;border:1px solid #e7edf2;display:block;box-shadow:0 10px 30px rgba(15,43,70,.1)}.figure figcaption{font-size:12px;color:var(--muted);margin-top:8px}.card{background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid var(--line);border-radius:20px;padding:20px}.card h3{margin:0 0 10px;color:var(--navy);font-size:20px}.card ul{margin:0;padding-left:1.2em}.pill-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:8px 12px;font-size:13px;font-weight:700;background:#edf7ff;color:#1d5e8d;border:1px solid #d7e9f6}.pill.green{background:#eaf8f4;color:#16715c;border-color:#cceee4}.pill.gold{background:#fff4da;color:#9b6815;border-color:#f4d896}
+    .compare{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border-radius:18px;border:1px solid var(--line);background:#fff}.compare th,.compare td{padding:15px 16px;border-bottom:1px solid var(--line);vertical-align:top}.compare th{background:#f1f7fb;text-align:left;color:var(--navy);font-size:14px}.compare tr:last-child td{border-bottom:0}.compare td:first-child{font-weight:800;color:var(--navy);width:22%}.mark{display:inline-block;padding:2px 8px;border-radius:999px;background:#eaf8f4;color:#16715c;font-weight:800;font-size:12px}.warn{background:#fff7ed;border-color:#f4d896}.warn .num{background:linear-gradient(135deg,#d89a20,#b84d4d)}.callout{border-left:6px solid var(--green);background:#f1fbf7;border-radius:18px;padding:18px 20px;margin-top:18px}.callout strong{color:var(--navy)}.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:18px}.step{border:1px solid var(--line);background:#fff;border-radius:18px;padding:16px}.step .month{font-weight:900;color:var(--blue);font-size:15px}.step b{display:block;color:var(--navy);margin:4px 0}.source{font-size:12px;color:var(--muted);margin-top:18px}.checklist{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}.check{padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:#fff}.check b{color:var(--navy)}.footer{margin-top:34px;padding:26px;border-radius:24px;background:#0f2b46;color:#eaf6ff;display:flex;gap:22px;align-items:center;justify-content:space-between}.footer img{width:220px;background:#fff;border-radius:12px;padding:8px}.footer p{margin:0;font-size:13px;color:#cfe5f4}.disclaimer{font-size:12px;color:var(--muted);margin-top:16px}
+    @media (max-width:840px){.page{padding:16px 14px 44px}.brandbar,.footer{display:block;text-align:left}.brandbar img{max-width:100%;width:260px}.brandnote{text-align:left;margin-top:10px}.hero{padding:28px}.hero-grid,.two,.quick,.timeline,.checklist{grid-template-columns:1fr}.section-head{display:block}.num{margin-bottom:12px}.footer img{margin-bottom:14px}.quick b{font-size:19px}}
+    @media print{body{background:#fff}.page{max-width:none;padding:0}.brandbar,.hero,section,.footer{box-shadow:none;break-inside:avoid}a{text-decoration:none;color:inherit}}
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="brandbar">
+      <img src="images/sakaguchi-logo-720.png" alt="坂口社会保険労務士事務所ロゴ" />
+      <div class="brandnote"><strong>顧問先向け 労務手続き説明資料</strong>労働保険の年度更新・社会保険の定時決定を、経営者・事務担当者向けに整理</div>
+    </div>
+
+    <header class="hero">
+      <div class="kicker">ANNUAL LABOR & SOCIAL INSURANCE PROCEDURES</div>
+      <h1>6〜7月に集中する<br>2つの重要手続き</h1>
+      <p class="lead">労働保険の「年度更新」と、社会保険の「定時決定（算定基礎届）」は、どちらも毎年7月10日が大きな節目です。ただし、見ている保険・集計する数字・反映時期が異なります。</p>
+      <div class="hero-grid">
+        <div class="hero-card">
+          <h2>この資料で伝えたいこと</h2>
+          <ul>
+            <li>年度更新は「労災・雇用保険料」を年1回精算・見込み計算する手続きです。</li>
+            <li>定時決定は「健康保険・厚生年金保険」の標準報酬月額を年1回見直す手続きです。</li>
+            <li>どちらも給与・賃金データの確認が重要なので、早めの資料共有が安全です。</li>
+          </ul>
+        </div>
+        <figure class="hero-img">
+          <img src="images/concept-03-schedule.png" alt="6月から7月の年度更新と算定基礎届のスケジュール図解" />
+          <figcaption class="caption">AI生成図解：6〜7月の重要手続きの全体像</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <div class="quick">
+      <div class="item"><b>期限は7月10日</b><span>令和8年度は金曜日。年度更新期間は6月1日〜7月10日。</span></div>
+      <div class="item"><b>使う数字が違う</b><span>年度更新は前年度賃金総額中心。算定は4〜6月報酬中心。</span></div>
+      <div class="item"><b>早めの確認が安全</b><span>賃金台帳・給与データ・加入者情報の整合確認が鍵。</span></div>
+    </div>
+
+    <section>
+      <div class="section-head">
+        <div class="num">01</div>
+        <div><h2>労働保険の年度更新とは</h2><p>労災保険・雇用保険について、前年度分を確定し、新年度分を概算で申告・納付する手続きです。</p></div>
+      </div>
+      <div class="two">
+        <figure class="figure">
+          <img src="images/concept-01-annual-renewal.png" alt="労働保険年度更新の流れのAI図解" />
+          <figcaption>AI生成図解：賃金集計 → 保険料計算 → 申告・納付</figcaption>
+        </figure>
+        <div class="card">
+          <h3>客観整理</h3>
+          <ul>
+            <li>対象は主に労災保険・雇用保険です。</li>
+            <li>令和8年度の年度更新期間は、6月1日（月）〜7月10日（金）です。</li>
+            <li>申告書は、都道府県労働局・労働基準監督署への郵送、または電子申請等で提出できます。</li>
+            <li>全期・第1期の通常納期限も令和8年7月10日です。</li>
+          </ul>
+          <div class="pill-row"><span class="pill green">労災保険</span><span class="pill green">雇用保険</span><span class="pill gold">確定保険料</span><span class="pill gold">概算保険料</span></div>
+        </div>
+      </div>
+      <div class="callout"><strong>実務上のポイント：</strong>年度更新では、賃金総額の集計範囲、雇用保険対象者、役員・兼務役員・短時間勤務者等の扱いを確認します。建設業等では事業の種類や一括有期事業の整理も重要です。</div>
+      <p class="source">出典：厚生労働省「労働保険年度更新に係るお知らせ」（確認日：2026-06-04）</p>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">02</div>
+        <div><h2>社会保険の定時決定とは</h2><p>健康保険・厚生年金保険について、実際の報酬と標準報酬月額のズレを年1回見直す手続きです。</p></div>
+      </div>
+      <div class="two">
+        <div class="card">
+          <h3>客観整理</h3>
+          <ul>
+            <li>7月1日現在の被保険者・70歳以上被用者について、原則として算定基礎届を提出します。</li>
+            <li>4月・5月・6月の報酬月額をもとに標準報酬月額を決定します。</li>
+            <li>提出期限は毎年7月10日までです。10日が土日の場合は翌営業日です。</li>
+            <li>決定された標準報酬月額は、9月から翌年8月までの各月に適用されます。</li>
+          </ul>
+          <div class="pill-row"><span class="pill">健康保険</span><span class="pill">厚生年金保険</span><span class="pill gold">4〜6月報酬</span><span class="pill green">9月から適用</span></div>
+        </div>
+        <figure class="figure">
+          <img src="images/concept-02-santei.png" alt="社会保険の定時決定・算定基礎届のAI図解" />
+          <figcaption>AI生成図解：4〜6月報酬 → 7月提出 → 9月分から反映</figcaption>
+        </figure>
+      </div>
+      <div class="callout"><strong>実務上のポイント：</strong>月額変更届の対象者、6月1日以降取得者、6月30日以前退職者、8月・9月随時改定予定者など、算定基礎届の対象外・特殊処理になる人を丁寧に確認します。</div>
+      <p class="source">出典：日本年金機構「定時決定（算定基礎届）」「令和8年度の算定基礎届のご提出について」（確認日：2026-06-04）</p>
+    </section>
+
+    <section>
+      <div class="section-head">
+        <div class="num">03</div>
+        <div><h2>2つの手続きの違い</h2><p>どちらも給与・賃金情報を扱いますが、目的と反映先が異なります。</p></div>
+      </div>
+      <table class="compare" aria-label="年度更新と定時決定の比較表">
+        <thead><tr><th>項目</th><th>労働保険 年度更新</th><th>社会保険 定時決定（算定基礎届）</th></tr></thead>
+        <tbody>
+          <tr><td>対象制度</td><td>労災保険・雇用保険</td><td>健康保険・厚生年金保険</td></tr>
+          <tr><td>目的</td><td>前年度の保険料を確定し、新年度の概算保険料を申告・納付する</td><td>標準報酬月額を実際の報酬に近づけるため、年1回見直す</td></tr>
+          <tr><td>主な集計</td><td>前年度の賃金総額、雇用保険対象賃金など</td><td>4月・5月・6月の報酬月額、支払基礎日数など</td></tr>
+          <tr><td>提出期限</td><td><span class="mark">令和8年度：7月10日（金）</span></td><td><span class="mark">令和8年度：7月10日（金）</span></td></tr>
+          <tr><td>反映・納付</td><td>確定保険料との差額精算、新年度概算保険料の納付</td><td>決定された標準報酬月額を9月〜翌年8月に適用</td></tr>
+          <tr><td>よく使う資料</td><td>賃金台帳、労働者名簿、出勤簿、雇用保険加入状況、役員等の確認資料</td><td>4〜6月給与データ、被保険者一覧、資格取得・喪失、月変予定者リスト</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="warn">
+      <div class="section-head">
+        <div class="num">04</div>
+        <div><h2>顧問先にお願いしたい準備</h2><p>期限直前は確認・修正が集中します。早めに資料が揃うほど、ミスと手戻りを減らせます。</p></div>
+      </div>
+      <div class="checklist">
+        <div class="check"><b>賃金台帳・給与データ</b><br>年度更新・算定のどちらにも重要です。対象期間と支払月を確認します。</div>
+        <div class="check"><b>出勤簿・支払基礎日数</b><br>算定基礎届では、4〜6月の支払基礎日数が判断材料になります。</div>
+        <div class="check"><b>入退社・資格取得喪失情報</b><br>7月1日時点の被保険者、6月以降取得者、退職者を確認します。</div>
+        <div class="check"><b>雇用保険加入状況</b><br>年度更新では、雇用保険対象賃金や対象者の整理が重要です。</div>
+        <div class="check"><b>固定的賃金の変更</b><br>昇給・降給・手当変更がある場合、月額変更届の対象確認につながります。</div>
+        <div class="check"><b>賞与・臨時支給の有無</b><br>算定対象報酬・賞与支払届・年度更新集計への影響を確認します。</div>
+      </div>
+      <div class="timeline">
+        <div class="step"><div class="month">5月下旬〜6月上旬</div><b>資料依頼</b><span>賃金台帳・給与データ・加入者情報を確認</span></div>
+        <div class="step"><div class="month">6月中</div><b>集計・照合</b><span>年度更新と算定の対象者・対象賃金を整理</span></div>
+        <div class="step"><div class="month">7月上旬</div><b>最終確認</b><span>申告・届出内容の確認、電子申請または郵送準備</span></div>
+        <div class="step"><div class="month">7月10日</div><b>期限</b><span>提出・納付の期限。直前対応は避けるのが安全</span></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <img src="images/sakaguchi-logo-720.png" alt="坂口社会保険労務士事務所ロゴ" />
+      <p>作成：坂口社会保険労務士事務所<br>根拠確認：厚生労働省・日本年金機構 公開情報（2026-06-04確認）<br>このHTMLは顧問先への説明・社内共有用に編集可能なローカル資料として作成しています。</p>
+    </footer>
+  </main>
+</body>
+</html>
