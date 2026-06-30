@@ -8,3 +8,4 @@
 
 - 年度更新・定時決定: https://taikisakaguchi.github.io/labor-social-insurance-explainer/
 - 介護休業制度ガイド: https://taikisakaguchi.github.io/labor-social-insurance-explainer/kaigo-kyugyo-2026/
+- 時間単位年休制度の実務整理: https://taikisakaguchi.github.io/labor-social-insurance-explainer/hourly-paid-leave/
